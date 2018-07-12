@@ -53,14 +53,17 @@ swiper image {
 .list-artical-comment {
     margin: 0 20rpx;
     font-size: 28rpx;
+    color:#666;
+    line-height: 1.2;
+}
+.artical-comment-expand {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    color:#666;
-    line-height: 1.2;
 }
+
 .list-artical-image {
     margin-left: 16rpx;
     width: 100%;

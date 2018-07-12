@@ -20,7 +20,7 @@
           </view>
           <text class='list-artical-title'>{{item.title}}</text>
           <image class='list-artical-image' src="{{item.imgSrc}}"></image>
-          <text class='list-artical-comment'>{{item.comment}}</text>
+          <text class="list-artical-comment {{item.expand? 'artical-comment-expand' :''}}"  bindtap="expandOrfold" data-index="{{index}}">{{item.comment}}</text>
           <view class='list-artical-like'>
             <image class='list-like-image' src="../../img/icon/chat.png"></image>
             <text class='list-like-font'>{{item.collection}}</text>

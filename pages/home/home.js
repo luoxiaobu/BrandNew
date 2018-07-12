@@ -31,7 +31,18 @@ Page({
             img: postSwiper
         });
         this.setData({
-            list: postsData.postList
+            list: postsData.postList.map((currentV) => {
+                return { ...currentV,
+                    expand: true
+                }
+            })
+        });
+    },
+    expandOrfold: function(event) {
+        var index = event.currentTarget.dataset['index'];
+        var mText = 'list[' + index + '].expand';
+        this.setData({
+            [mText]: !this.data.list[index].expand
         });
     },
 })
