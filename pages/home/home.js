@@ -1,10 +1,12 @@
 //home.js
 //获取应用实例
+var postsData=require('../../data/posts-data.js')
 const app = getApp()
 
 Page({
   data: {
-    img: {},
+    img: [],
+    list: [],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
@@ -14,7 +16,7 @@ Page({
   },
   // //事件处理函数
   onLoad: function() {
-    var postList = [{
+    var postSwiper = [{
       imgSrc: "/img/qixi1.jpg",
       info: 'haha'
     }, {
@@ -25,7 +27,10 @@ Page({
       info: 'haha1'
     }];
     this.setData({
-      img: postList
+      img: postSwiper
+    });
+    this.setData({
+      list: postsData.postList
     });
   },
 })

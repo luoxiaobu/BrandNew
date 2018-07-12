@@ -1,13 +1,87 @@
 /**home.wxss**/
-.page-section {
-  width: 100%;
-  height: 500rpx;
+.home-container {
+    background-color: #f7f7f7;
+}
+.page-swiper {
+    width: 100%;
+    height: 500rpx;
+    margin-bottom: 40rpx;
 }
 
 swiper {
- height: 100%;
+    height: 100%;
 }
+
 swiper image {
-    width:100%;
-    height:100%
+    width: 100%;
+    height: 100%;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rpx;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+    box-shadow: 0 1px 1px 0px #ededed;
+    padding-bottom: 20rpx;
+}
+
+.list-author-info {
+    margin-top: 10rpx;
+    margin-bottom: 20rpx;
+    margin-left: 10rpx;
+}
+.list-author-image {
+    width: 60rpx;
+    height: 60rpx;
+    vertical-align: middle;
+}
+.list-update-date {
+    margin-left: 20rpx;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    font-size: 26rpx;
+}
+.list-artical-title {
+    font-size: 36rpx;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10rpx;
+    margin-left: 20rpx;    
+}
+.list-artical-comment {
+    margin: 0 20rpx;
+    font-size: 28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color:#666;
+    line-height: 1.2;
+}
+.list-artical-image {
+    margin-left: 16rpx;
+    width: 100%;
+    height: 340rpx;
+    margin: auto 0;
+    margin-bottom: 15rpx;
+}
+.list-artical-like {
+    font-size: 26rpx;
+    flex-direction: row;
+    line-height: 16rpx;
+    margin: 20rpx;
+}
+.list-like-image {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.list-like-font {
+    vertical-align: middle;
+    margin-right: 20rpx;
+    
 }

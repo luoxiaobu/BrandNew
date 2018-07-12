@@ -1,6 +1,6 @@
 <!--home.wxml-->
-<view class="page-container">
-    <view class="page-section swiper">
+<view class="home-container">
+    <view class="page-swiper">
       <swiper
         indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
         interval="{{interval}}" duration="{{duration}}">
@@ -10,6 +10,25 @@
           </swiper-item>
         </block>
       </swiper>
+    </view>
+    <view class="page-list">
+      <block wx:for="{{list}}" wx:key="*this">
+        <view class="list-container">
+          <view class='list-author-info'>
+            <image class='list-author-image' src="{{item.imgAuthor}}"></image>
+            <text class='list-update-date'>{{item.timeDate}}</text>
+          </view>
+          <text class='list-artical-title'>{{item.title}}</text>
+          <image class='list-artical-image' src="{{item.imgSrc}}"></image>
+          <text class='list-artical-comment'>{{item.comment}}</text>
+          <view class='list-artical-like'>
+            <image class='list-like-image' src="../../img/icon/chat.png"></image>
+            <text class='list-like-font'>{{item.collection}}</text>
+            <image class='list-like-image' src="../../img/icon/view.png"></image>
+            <text class='list-like-font'>{{item.reading}}</text>
+          </view> 
+        </view>
+      </block>
     </view>
 </view>
 
