@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/home/home",
     "pages/welcome/welcome",
+    "pages/home/home",
     "pages/logs/logs"
   ],
   "window":{
