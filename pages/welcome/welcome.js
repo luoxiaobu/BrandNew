@@ -11,7 +11,7 @@ Page({
   },
   //事件处理函数
   goToHome: function() {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../home/home'
     })
   },

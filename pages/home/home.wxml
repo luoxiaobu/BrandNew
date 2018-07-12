@@ -1,12 +1,12 @@
-<!--index.wxml-->
-<view class="container">
-    <view class="page-section page-section-spacing swiper">
+<!--home.wxml-->
+<view class="page-container">
+    <view class="page-section swiper">
       <swiper
         indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
-        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
-        <block wx:for="{{background}}" wx:key="*this">
+        interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{img}}" wx:key="*this">
           <swiper-item>
-            <view class="swiper-item {{item}}"></view>
+            <image src="{{item.imgSrc}}" mode="{{aspectFit}}"></image>
           </swiper-item>
         </block>
       </swiper>
