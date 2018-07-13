@@ -12,7 +12,7 @@
       </swiper>
     </view>
     <view class="page-list">
-      <block wx:for="{{list}}" wx:key="*this">
+      <block wx:for="{{list}}" wx:key="{{item.postId}}">
         <view class="list-container">
           <view class='list-author-info'>
             <image class='list-author-image' src="{{item.imgAuthor}}"></image>

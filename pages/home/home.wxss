@@ -85,6 +85,5 @@ swiper image {
 }
 .list-like-font {
     vertical-align: middle;
-    margin-right: 20rpx;
-    
+    margin-right: 20rpx;  
 }

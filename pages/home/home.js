@@ -51,9 +51,9 @@ Page({
         var mValue = `list[${index}].collection`;
         var valueCount = 0;
         if (this.data.list[index].collected) {
-            valueCount = this.data.list[index].collection - 1;
+            valueCount = parseInt(this.data.list[index].collection) - 1;
         } else {
-            valueCount = this.data.list[index].collection + 1;
+            valueCount = parseInt(this.data.list[index].collection) + 1;
         }
         this.setData({
             [mCollected]: !this.data.list[index].collected,
